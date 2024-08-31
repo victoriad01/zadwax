@@ -6,7 +6,8 @@ export default {
       colors: {
         primary: {
           DEFAULT: "#5F2ECF",
-          50: "#AF96E7", // Custom 50% tint of primary
+          50: "#AF96E7",
+          700: "#4B1EA5",
         },
       },
     },
