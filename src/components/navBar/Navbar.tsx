@@ -3,10 +3,10 @@ import Dp from "../../assets/svg/dp.svg";
 
 const Navbar = () => {
   return (
-    <nav className="  h-[72px] flex items-center sm:justify-end bg-white w-full gap-20 shadow-sm  px-4 md:px-8">
+    <nav className="  h-[72px] flex items-center justify-center sm:justify-end bg-white w-full md: gap-20 shadow-sm  px-4 md:px-8">
       <input
         type="text"
-        className="flex max-w-[320px] gap-8 h-[40px] rounded-md px-4 border-2"
+        className="flex  w-[180px] md:w-[320px]  h-[40px] rounded-md px-4 border-2"
         placeholder={"Search"}
       />
 
