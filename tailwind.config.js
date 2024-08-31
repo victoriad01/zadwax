@@ -10,6 +10,11 @@ export default {
           700: "#4B1EA5",
         },
       },
+      fontFamily: {
+        firma: ["BR Firma", "sans-serif"],
+        aeonik: ["Aeonik Pro", "sans-serif"],
+        aeoniklight: ["Aeonik Pro Light", "sans-serif"],
+      },
     },
   },
   plugins: [],
