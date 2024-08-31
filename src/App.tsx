@@ -7,7 +7,7 @@ import { useState } from "react";
 import { TfiMenu } from "react-icons/tfi";
 
 function App() {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);
 
   const toggleSidebar = () => {
     setIsSidebarOpen((prev) => !prev);

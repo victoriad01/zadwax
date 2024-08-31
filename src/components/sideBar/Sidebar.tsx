@@ -10,11 +10,18 @@ import StarredIcon from "../../assets/svg/star.svg";
 import ProjectIcon from "../../assets/svg/folder.svg";
 import SupportIcon from "../../assets/svg/info.svg";
 import SettingIcon from "../../assets/svg/setting.svg";
-import { IoCloseSharp } from "react-icons/io5";
-import { IoIosCloseCircleOutline } from "react-icons/io";
 import { MdOutlineClose } from "react-icons/md";
+import { Dispatch, SetStateAction } from "react";
 
-const Sidebar = ({ setIsSidebarOpen }) => {
+interface SideBarProps {
+  setIsSidebarOpen: Dispatch<SetStateAction<boolean>>;
+}
+
+const Sidebar = ({ setIsSidebarOpen }: SideBarProps) => {
+  const handleClick = () => {
+    setIsSidebarOpen(false);
+  };
+
   return (
     <div>
       <aside className="w-[301px] bg-white h-screen md:flex">
@@ -28,7 +35,7 @@ const Sidebar = ({ setIsSidebarOpen }) => {
           <img src={FigmaIllustration} alt="Figma" className="cursor-pointer" />
           <img src={AddInIllustration} alt="Add" className="cursor-pointer" />
           <MdOutlineClose
-            onClick={() => setIsSidebarOpen(false)}
+            onClick={handleClick}
             className="md:hidden h-[32px] w-[32px] text-white rounded-full "
           />
         </div>

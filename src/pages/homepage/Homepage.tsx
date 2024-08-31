@@ -4,14 +4,6 @@ import { resources } from "../../data/data";
 import FillIllustration from "../../assets/svg/Vector.svg";
 
 const Homepage = () => {
-  // styleName: Display xs/Bold; font-family: var(--TypefaceFamilyDisplay);
-  //  font-size: var(--TypefaceSizeDisplayxs); line-height: 32px; //styleName: Display xs/Bold;
-  // font-family: var(--TypefaceFamilyDisplay);
-  // font-size: var(--TypefaceSizeDisplayxs);
-  // font-weight: 400;
-  // line-height: 32px;
-  // text-align: left;
-
   return (
     <div className="flex flex-col gap-8">
       <div className="flex flex-col gap-2">
