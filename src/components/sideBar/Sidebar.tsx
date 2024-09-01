@@ -64,7 +64,7 @@ const Sidebar = ({ setIsSidebarOpen }: SideBarProps) => {
             </div>
           </div>
 
-          <div className="flex flex-col h-[300px] md:h-[450px] justify-between">
+          <div className="flex flex-col h-[300px] md:h-[360px] xl:h-[500px] justify-between">
             <div className="cursor-pointer pl-8 flex gap-2 items-center mt-8">
               <img src={ProjectIcon} alt="" />
               <p className="leading-[24.79px]  text-[14px] ">Projects</p>

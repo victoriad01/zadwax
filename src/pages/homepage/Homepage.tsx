@@ -19,7 +19,7 @@ const Homepage = () => {
           <p className="leading-[32px] font-[500] text-[14px]  text-gray-900">
             Welcome to the cool kids club
           </p>
-          <p className=" z-20 max-w-[1035px]   min-h-[64px] text-primary-700 text-[24px] font-[500] leading-[32px]">
+          <p className="relative z-10 max-w-[920px]  min-h-[64px] text-primary-700 text-[24px] font-[500] leading-[32px]">
             The new way designers revolutionize their work. See how others are
             using Zadwax to accelerate their design process.
           </p>
@@ -27,12 +27,13 @@ const Homepage = () => {
         <img
           src={FillIllustration}
           alt="illustration"
-          className="absolute bottom-0 right-0  w-[89px] h-[53px] xl:w-[189px] xl:h-[153px] "
+          //w-[89px] h-[53px]
+          className="absolute bottom-0 right-0 w-[169px] h-[143px]"
         />
       </div>
 
-      <div className="min-h-286px gap-[40px] xl:flex">
-        <div className="flex flex-col w-full xl:w-[611px] p-[16px] gap-[16px] shadow-md rounded-md mb-10 lg:mb-0">
+      <div className="w-full min-h-286px gap-[40px] xl:flex">
+        <div className=" flex flex-col w-full xl:w-[60%] p-[16px] gap-[16px] shadow-md rounded-md mb-10 lg:mb-0">
           <div className="md:flex items-center justify-between border-b-2 pb-[12px] min-h-[62px]">
             <div className="">
               <p className="text-xl font-[700] leading-[32px]">Get Started</p>
@@ -70,7 +71,7 @@ const Homepage = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col w-full xl:w-[500px] p-[16px] gap-[16px] shadow-md rounded-md ">
+        <div className="flex flex-col w-full xl:w-[40%] p-[16px] gap-[16px] shadow-md rounded-md ">
           <div className="min-h-[62px] flex flex-col border-b-2 pb-[12px] ">
             <p className="text-xl font-[700] leading-[32px]">
               Research Tips and Tricks
@@ -109,7 +110,8 @@ const Homepage = () => {
 
       <div className="flex flex-col gap-[24px] mb-[68px]">
         <p className="text-xl font-[700] leading-[32px]">Resources for you</p>
-        <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-[24px] ">
+        <div className="grid lg:grid-cols-2 lg:gap-[24px] xl:grid-cols-4 2xl:grid-cols-4">
+          {/* <div className="flex flex-wrap gap-[24px]"> */}
           {resources.map((resource) => (
             <Card resource={resource} key={resource.id} />
           ))}
