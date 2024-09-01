@@ -3,7 +3,7 @@ import Dp from "../../assets/svg/dp.svg";
 
 const Navbar = () => {
   return (
-    <nav className="z-20 relative  h-[72px] flex items-center justify-center sm:justify-end bg-white w-full gap-10 md:gap-20 shadow-sm  px-4 md:px-8">
+    <nav className="z-20 relative  h-[72px] flex items-center justify-center sm:justify-end bg-white w-full gap-2 sm:gap-10 md:gap-20 shadow-sm  px-4 md:px-8">
       <input
         type="text"
         className="flex  w-[180px] md:w-[320px]  h-[40px] rounded-md px-4 border-2"
