@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="relative">
         <input
           type="text"
-          className="flex  min-w-[180px] md:w-[320px]  h-[40px] rounded-md pl-8 pr-4 border-2"
+          className="flex  min-w-[180px] md:w-[320px]  h-[40px] rounded-md pl-8 pr-4 border-[1px] border-gray-300 text-gray-500"
           placeholder={"Search"}
         />
         <div className="absolute top-3 left-3 ">

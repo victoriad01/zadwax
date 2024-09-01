@@ -16,11 +16,13 @@ const RightSide = () => {
 
   const activeStyle = "px-4  bg-[#F0EBFC] text-[#5F2ECF] rounded-lg";
   return (
-    <div className="w-[237px] gap-8 h-full">
+    <div className="w-[237px] gap-8 h-full text-gray-700">
       <div className="  pb-8 mx-4 md:h-[248px]  ">
         <div className="cursor-pointer  px-4  flex gap-2 items-center mt-4">
           <img src={LogoIcon} alt="" />
-          <p className="leading-[24.79px] font-[700] text-[21.56px] ">Zadwax</p>
+          <p className="leading-[24.79px] font-[700] text-[21.56px] text-logo">
+            Zadwax
+          </p>
         </div>
         <nav
           className={`cursor-pointer px-4 flex gap-4 items-center mt-8 ${
