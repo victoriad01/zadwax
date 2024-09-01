@@ -1,5 +1,5 @@
 import { Dispatch, SetStateAction } from "react";
-import LeftSide from "./components/leftSide";
+import LeftSide from "./components/LeftSide";
 import RightSide from "./components/RightSide";
 
 interface SideBarProps {
