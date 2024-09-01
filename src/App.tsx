@@ -28,7 +28,6 @@ function App() {
           className={`fixed inset-0 z-50 bg-black bg-opacity-50 md:bg-transparent md:relative md:flex ${
             isSidebarOpen ? "block" : "hidden"
           } md:block`}
-          onClick={() => setIsSidebarOpen(false)}
         >
           <Sidebar setIsSidebarOpen={setIsSidebarOpen} />
         </div>

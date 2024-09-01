@@ -1,23 +1,23 @@
 @font-face {
-  font-family: "BR Firma"; /* Choose a name for the font */
+  font-family: "BR Firma";
   src: url("../../../src//assets/fonts/BR\ Firma\ Medium.otf")
-    format("truetype"); /* Update the path and format according to your file type */
-  font-weight: normal; /* You can define different weights */
-  font-style: normal; /* Define the style */
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Aeonik Pro"; /* Choose a name for the font */
+  font-family: "Aeonik Pro";
   src: url("../../../src//assets/fonts/AeonikProTRIAL-Regular.otf")
-    format("truetype"); /* Update the path and format according to your file type */
-  font-weight: normal; /* You can define different weights */
-  font-style: normal; /* Define the style */
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Aeonik Pro Light"; /* Choose a name for the font */
+  font-family: "Aeonik Pro Light";
   src: url("../../../src//assets/fonts/AeonikProTRIAL-Light.otf")
-    format("truetype"); /* Update the path and format according to your file type */
-  font-weight: normal; /* You can define different weights */
-  font-style: normal; /* Define the style */
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }

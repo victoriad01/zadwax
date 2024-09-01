@@ -27,7 +27,6 @@ const Homepage = () => {
         <img
           src={FillIllustration}
           alt="illustration"
-          //w-[89px] h-[53px]
           className="absolute bottom-0 right-0 w-[169px] h-[143px]"
         />
       </div>
