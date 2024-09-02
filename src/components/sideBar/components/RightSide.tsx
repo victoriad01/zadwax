@@ -6,6 +6,11 @@ import ProjectIcon from "../../../assets/svg/folder.svg";
 import SupportIcon from "../../../assets/svg/info.svg";
 import SettingIcon from "../../../assets/svg/setting.svg";
 import { useState } from "react";
+import {
+  activeStyle,
+  sidebarDefaultStyle,
+  sidebarParagraphDefaultStyle,
+} from "./sibeBarstyles";
 
 const RightSide = () => {
   const [navStyle, setNavStyle] = useState<string>("home");
@@ -14,7 +19,6 @@ const RightSide = () => {
     setNavStyle(navType);
   };
 
-  const activeStyle = "px-4  bg-[#F0EBFC] text-[#5F2ECF] rounded-lg";
   return (
     <div className="w-[237px] gap-8 h-full text-gray-700">
       <div className="  pb-8 mx-4 md:h-[248px]  ">
@@ -25,64 +29,64 @@ const RightSide = () => {
           </p>
         </div>
         <nav
-          className={`cursor-pointer px-4 flex gap-4 items-center mt-8 ${
+          className={` mt-8 ${sidebarDefaultStyle}  ${
             navStyle === "home" && activeStyle
           }`}
           onClick={() => handleNavClick("home")}
         >
           <img src={HomeIcon} alt="" />
-          <p className="leading-[24.79px]  text-[14px] py-2">Home</p>
+          <p className={sidebarParagraphDefaultStyle}>Home</p>
         </nav>
 
         <nav
-          className={`cursor-pointer px-4 flex gap-4 items-center  ${
+          className={`${sidebarDefaultStyle}    ${
             navStyle === "recents" && activeStyle
           }`}
           onClick={() => handleNavClick("recents")}
         >
           <img src={RecentIcon} alt="" />
-          <p className="leading-[24.79px] text-[14px] py-2 ">Recents</p>
+          <p className={sidebarParagraphDefaultStyle}>Recents</p>
         </nav>
 
         <nav
-          className={`cursor-pointer px-4 flex gap-4 items-center ${
+          className={`${sidebarDefaultStyle}   ${
             navStyle === "starred" && activeStyle
           }`}
           onClick={() => handleNavClick("starred")}
         >
           <img src={StarredIcon} alt="" />
-          <p className="leading-[24.79px]  text-[14px]  py-2">Starred</p>
+          <p className={sidebarParagraphDefaultStyle}>Starred</p>
         </nav>
         <nav
-          className={`cursor-pointer px-4 flex gap-4 items-center mt-8  border-t-2  ${
+          className={`${sidebarDefaultStyle}   mt-8  border-t-2  ${
             navStyle === "projects" && activeStyle
           }`}
           onClick={() => handleNavClick("projects")}
         >
           <img src={ProjectIcon} alt="" />
-          <p className="leading-[24.79px]  text-[14px] py-2">Projects</p>
+          <p className={sidebarParagraphDefaultStyle}>Projects</p>
         </nav>
       </div>
 
       <div className="mx-4 flex flex-col h-[calc(100%-480px)] md:h-[calc(100%-300px)] justify-end">
         <div className="flex flex-col gap-2">
           <nav
-            className={`cursor-pointer px-4 flex gap-4 items-center  ${
+            className={`${sidebarDefaultStyle}    ${
               navStyle === "support" && activeStyle
             }`}
             onClick={() => handleNavClick("support")}
           >
             <img src={SupportIcon} alt="" />
-            <p className="leading-[24.79px]  text-[14px] py-2">Support</p>
+            <p className={sidebarParagraphDefaultStyle}>Support</p>
           </nav>
           <nav
-            className={`cursor-pointer px-4 flex gap-4 items-center  ${
+            className={`${sidebarDefaultStyle}    ${
               navStyle === "settings" && activeStyle
             }`}
             onClick={() => handleNavClick("settings")}
           >
             <img src={SettingIcon} alt="" />
-            <p className="leading-[24.79px]  text-[14px] py-2">Settings</p>
+            <p className={sidebarParagraphDefaultStyle}>Settings</p>
           </nav>
         </div>
       </div>

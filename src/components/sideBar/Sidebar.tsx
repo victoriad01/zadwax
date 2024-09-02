@@ -15,7 +15,6 @@ const Sidebar = ({ setIsSidebarOpen }: SideBarProps) => {
     <div>
       <aside className="w-[301px] bg-white h-screen md:flex">
         <LeftSide handleClick={handleClick} />
-
         <RightSide />
       </aside>
     </div>

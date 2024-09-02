@@ -28,6 +28,7 @@ export default {
         aeoniklight: ["Aeonik Pro Light", "sans-serif"],
         aeonikBold: ["Aeonik Pro Bold", "sans-serif"],
       },
+      "nav-default": "cursor-pointer px-4 flex gap-4 items-center ",
     },
   },
   plugins: [],
